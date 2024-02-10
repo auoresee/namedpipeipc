@@ -1,8 +1,8 @@
 import os
 import time
 import subprocess
-from named_pipe_ipc_win import *
-from ipc_manager import *
+import json
+from namedpipeipc import *
 
 def test1():
     message = IPCMessage("Hello", IPCMessageDataType.STRING, IPCMessageDirection.ONE_WAY, "test")
